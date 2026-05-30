@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Derrick Felix | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="orbCanvas"></canvas>
+
+  <div class="theme-switch">
+    <i class="fas fa-sun"></i>
+    <div class="toggle-track" id="themeToggle">
+      <div class="toggle-knob"></div>
+    </div>
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo">DF<span>.</span></a>
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <a href="#" class="resume-link" id="cvDownloadBtn">CV</a>
+      </div>
+      <div class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="mobile-cta">Hire Me</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg-text">DERRICK</div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-greeting">
+              <span class="greeting-line"></span>
+              <span>Hi, I'm</span>
+            </div>
+            <h1 class="hero-name">
+              Derrick Felix<br>
+              <span class="hero-last">Kiprono</span>
+            </h1>
+            <div class="hero-typing">
+              <span class="typing-prefix">I build</span>
+              <span class="typing-text" id="typingText"></span>
+              <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-desc">
+              Software developer specializing in ERPNext, Python, and scalable web solutions. 
+              I turn complex problems into elegant digital products that drive real business impact.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn-primary">
+                <span>View Work</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn-secondary">
+                <i class="fas fa-paper-plane"></i>
+                <span>Contact Me</span>
+              </a>
+            </div>
+            <div class="hero-info-row">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Nairobi, Kenya</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>lamarronnie7@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>+254 707 167 888</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="profile-image-wrapper">
+              <div class="profile-image">
+                <img src="Images/Profile.jpeg" alt="Derrick Felix Kiprono" onerror="this.src='https://placehold.co/400x400?text=DF'">
+                <div class="profile-glow"></div>
+              </div>
+              <div class="profile-badge">
+                <i class="fas fa-check-circle"></i>
+                <span>Available for work</span>
+              </div>
+            </div>
+            
+            <div class="code-card">
+              <div class="code-header">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+                <span class="code-path">developer.ts</span>
+              </div>
+              <div class="code-content">
+                <pre><code><span class="keyword">const</span> <span class="variable">derrick</span> = {<br>  <span class="key">title</span>: <span class="string">"Software Developer"</span>,<br>  <span class="key">expertise</span>: [<span class="string">"ERPNext"</span>, <span class="string">"Python"</span>, <span class="string">"JS"</span>],<br>  <span class="key">passion</span>: <span class="string">"Building impact"</span>,<br>  <span class="key">available</span>: <span class="boolean">true</span><br>};</code></pre>
+              </div>
+            </div>
+            <div class="stats-badge">
+              <div class="stat-value">3+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stats-badge second">
+              <div class="stat-value">25+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Experience</span>
+          <h2>Where I've <span class="gradient">Worked</span></h2>
+          <p>Building impactful solutions across industries</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>IT Support Specialist / ERP Developer</h3>
+                <span class="timeline-date">2026 – Present</span>
+              </div>
+              <div class="timeline-company">TakaTaka Solutions | Kiambu, Kenya</div>
+              <ul class="timeline-list">
+                <li>Built complete waste management ERP handling buybacks, waste pickers, recycling, material recovery & sorting operations</li>
+                <li>Manage onsite clients including major malls and UN operations</li>
+                <li>Integrated accounting modules, HR systems, and comprehensive reporting dashboards</li>
+                <li>Weighbridge integration testing with Postman API validation for accurate waste measurement</li>
+                <li>Lead ERPNext platform management with 98% user satisfaction rate</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Software Developer</h3>
+                <span class="timeline-date">2025 – 2026</span>
+              </div>
+              <div class="timeline-company">Upeosoft | Nairobi, Kenya</div>
+              <ul class="timeline-list">
+                <li><strong>Tireproz & Credicore:</strong> Built vehicle parts sales platform + motorbike hire purchase loan tracking system</li>
+                <li><strong>Toprich Manufacturing:</strong> Developed manufacturing module for motorbike parts production & quality control</li>
+                <li><strong>Cylon Backend:</strong> Designed e-commerce backend system with API integrations & database optimization</li>
+                <li><strong>Freight Market:</strong> Created import freight management, yard management & portfolio tracking systems</li>
+                <li><strong>FreshMart Mobile App:</strong> Developed frontend + backend for grocery delivery platform</li>
+                <li>Delivered 15+ corporate websites and client ERPNext customizations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Portfolio</span>
+          <h2>Featured <span class="gradient">Projects</span></h2>
+          <p>Real solutions that deliver real results</p>
+        </div>
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="erp">ERPNext</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="skills-wrapper">
+          <div class="skills-left">
+            <div class="section-header left-align">
+              <span class="section-badge">Expertise</span>
+              <h2>Tech <span class="gradient">Stack</span></h2>
+              <p>Tools & technologies I master</p>
+            </div>
+            <div class="skills-cloud" id="skillsCloud"></div>
+          </div>
+          <div class="skills-right">
+            <div class="stats-grid">
+              <div class="stat-box">
+                <div class="stat-number">100%</div>
+                <div class="stat-desc">Client Satisfaction</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">24/7</div>
+                <div class="stat-desc">Support Mindset</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">Agile</div>
+                <div class="stat-desc">Scrum/Kanban</div>
+              </div>
+            </div>
+            <div class="attribute-list">
+              <div class="attribute-item"><i class="fas fa-check-circle"></i><span>Self-motivated & proactive</span></div>
+              <div class="attribute-item"><i class="fas fa-check-circle"></i><span>Team-oriented collaborator</span></div>
+              <div class="attribute-item"><i class="fas fa-check-circle"></i><span>Fast learner, passionate about tech</span></div>
+              <div class="attribute-item"><i class="fas fa-check-circle"></i><span>Strong communicator</span></div>
+              <div class="attribute-item"><i class="fas fa-check-circle"></i><span>Problem-solving mindset</span></div>
+              <div class="attribute-item"><i class="fas fa-check-circle"></i><span>Detail-oriented & organized</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Education</span>
+          <h2>Academic <span class="gradient">Background</span></h2>
+          <p>My learning journey</p>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card"><i class="fas fa-graduation-cap"></i><h3>Bachelor of Science</h3><p>Applied Computing, Software Development</p><span>KCA University | 04/2025</span></div>
+          <div class="edu-card"><i class="fas fa-chart-line"></i><h3>Diploma</h3><p>Data Management & Data Analytics</p><span>KCA University | 04/2025</span></div>
+          <div class="edu-card"><i class="fas fa-school"></i><h3>High School</h3><p>Tambach High School</p><span>Grade: B | 2020</span></div>
+          <div class="edu-card"><i class="fas fa-microchip"></i><h3>Primary School</h3><p>Sabatia Primary School</p><span>355 Marks | Grade: B | 2016</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-left">
+            <div class="section-header left-align">
+              <span class="section-badge">Get In Touch</span>
+              <h2>Let's <span class="gradient">Connect</span></h2>
+              <p>Available for opportunities & collaborations</p>
+            </div>
+            <div class="contact-info-list">
+              <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h4>Email Me</h4><a href="mailto:lamarronnie7@gmail.com">lamarronnie7@gmail.com</a></div></div>
+              <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-phone-alt"></i></div><div><h4>Call Me</h4><a href="tel:0707167888">0707 167 888</a> / <a href="tel:0746914118">0746 914 118</a></div></div>
+              <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Location</h4><span>Nairobi, Kenya</span></div></div>
+            </div>
+          </div>
+          <div class="contact-right">
+            <div class="references-card">
+              <h3>Professional References</h3>
+              <div class="ref-item"><div class="ref-avatar"><i class="fas fa-user-tie"></i></div><div class="ref-info"><strong>Kevin Kuria</strong><p>Manager – Upeosoft</p><a href="mailto:kuria@upeosoft.com">kuria@upeosoft.com</a> | 0790 296 707</div></div>
+              <div class="ref-item"><div class="ref-avatar"><i class="fas fa-chalkboard-user"></i></div><div class="ref-info"><strong>Richard Mzungu</strong><p>Project Manager – Simba Tech</p><a href="mailto:richard.mzungu@simbatech.biz">richard.mzungu@simbatech.biz</a> | 0725 137 637</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Derrick Felix Kiprono — Crafted with <i class="fas fa-heart"></i> for modern web</p>
+    </div>
+  </footer>
+
+  <div id="cvModal" class="cv-modal">
+    <div class="cv-modal-content">
+      <div class="cv-modal-icon"><i class="fas fa-file-pdf"></i></div>
+      <h3>Download CV</h3>
+      <p>Do you want to download Derrick Felix's Curriculum Vitae?</p>
+      <div class="cv-modal-buttons">
+        <button class="modal-btn cancel" id="cancelDownload">Cancel</button>
+        <button class="modal-btn confirm" id="confirmDownload">Download CV</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
